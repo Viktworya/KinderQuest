@@ -1,0 +1,33 @@
+<resources>
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/teal_200</item>
+
+        <!-- Apply custom ImageButton style to ALL ImageButtons -->
+        <item name="imageButtonStyle">@style/ImageButtonStyle</item>
+    </style>
+
+    <!-- Custom ImageButton Style -->
+    <style name="ImageButtonStyle" parent="Widget.AppCompat.ImageButton">
+        <!-- Elevation values -->
+        <item name="android:elevation">6dp</item>
+        <item name="android:translationZ">12dp</item>
+
+        <!-- Disable default button animations -->
+        <item name="android:stateListAnimator">@null</item>
+
+        <!-- Custom background -->
+        <item name="android:background">@drawable/image_button_background</item>
+
+        <!-- Padding inside the button -->
+        <item name="android:padding">8dp</item>
+
+        <!-- Image scaling -->
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+
+</resources>

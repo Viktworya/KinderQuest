@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Top Row -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <ImageButton
+            android:id="@+id/btnLetterA"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/a"
+            android:background="@drawable/image_button_background"
+            android:scaleType="centerInside"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Letter A"/>
+
+        <ImageButton
+            android:id="@+id/btnLetterB"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/b"
+            android:background="@drawable/image_button_background"
+            android:scaleType="centerInside"
+            android:layout_marginStart="8dp"
+            android:contentDescription="Letter B"/>
+    </LinearLayout>
+
+    <!-- Bottom Row -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnLetterC"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/c"
+            android:background="@drawable/image_button_background"
+            android:scaleType="centerInside"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Letter C"/>
+
+        <ImageButton
+            android:id="@+id/btnLetterD"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/d"
+            android:background="@drawable/image_button_background"
+            android:scaleType="centerInside"
+            android:layout_marginStart="8dp"
+            android:contentDescription="Letter D"/>
+    </LinearLayout>
+</LinearLayout>
