@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+       //  TEST COMMIT LANG TO
         val btnAlphabet = findViewById<ImageButton>(R.id.btnAlphabet)
         val btnNumber = findViewById<ImageButton>(R.id.btnNumbers)
         val btnColorShape = findViewById<ImageButton>(R.id.btnColorsShapes)
