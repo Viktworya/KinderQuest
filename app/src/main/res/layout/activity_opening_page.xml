@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Cloud Background Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/cloudbg"
+        android:scaleType="centerCrop"
+        android:contentDescription="Cloud background"/>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <!-- App Title -->
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KinderQuest ✨"
+            android:textSize="32sp"
+            android:textColor="#FF6D00"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Kids Image -->
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/kids"
+            android:scaleType="fitCenter"
+            android:contentDescription="Happy kids learning"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- App Description -->
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="KinderQuest helps your child read out loud, learn new words, and have fun in every step of the way!"
+            android:textSize="16sp"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:lineSpacingExtra="8sp"
+            android:layout_marginBottom="48dp"/>
+
+        <!-- Get Started Button -->
+        <Button
+            android:id="@+id/btnDashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2B5E6F"
+            android:paddingHorizontal="32dp"
+            android:paddingVertical="16dp"
+            android:text="Get Started"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </LinearLayout>
+</FrameLayout>

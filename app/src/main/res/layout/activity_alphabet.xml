@@ -1,65 +1,393 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="16dp">
+    android:layout_height="match_parent">
 
-    <!-- Top Row -->
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="16dp">
+    <!-- Cloud Background Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/cloudbg"
+        android:scaleType="centerCrop"
+        android:contentDescription="Cloud background"/>
 
-        <ImageButton
-            android:id="@+id/btnLetterA"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
-            android:src="@drawable/a"
-            android:background="@drawable/image_button_background"
-            android:scaleType="centerInside"
-            android:layout_marginEnd="8dp"
-            android:contentDescription="Letter A"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
-        <ImageButton
-            android:id="@+id/btnLetterB"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
-            android:src="@drawable/b"
-            android:background="@drawable/image_button_background"
-            android:scaleType="centerInside"
-            android:layout_marginStart="8dp"
-            android:contentDescription="Letter B"/>
-    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
 
-    <!-- Bottom Row -->
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+            <!-- Row 1: A-B -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
 
-        <ImageButton
-            android:id="@+id/btnLetterC"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
-            android:src="@drawable/c"
-            android:background="@drawable/image_button_background"
-            android:scaleType="centerInside"
-            android:layout_marginEnd="8dp"
-            android:contentDescription="Letter C"/>
+                <ImageButton
+                    android:id="@+id/btnLetterA"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/a"
+                    android:background="@drawable/image_button_background"
+                    android:scaleType="centerInside"
+                    android:layout_marginEnd="8dp"
+                    android:contentDescription="Letter A"/>
 
-        <ImageButton
-            android:id="@+id/btnLetterD"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
-            android:src="@drawable/d"
-            android:background="@drawable/image_button_background"
-            android:scaleType="centerInside"
-            android:layout_marginStart="8dp"
-            android:contentDescription="Letter D"/>
-    </LinearLayout>
-</LinearLayout>
+                <ImageButton
+                    android:id="@+id/btnLetterB"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/b"
+                    android:background="@drawable/image_button_background"
+                    android:scaleType="centerInside"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="Letter B"/>
+            </LinearLayout>
+
+            <!-- Row 2: C-D -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <ImageButton
+                    android:id="@+id/btnLetterC"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/c"
+                    android:background="@drawable/image_button_background"
+                    android:scaleType="centerInside"
+                    android:layout_marginEnd="8dp"
+                    android:contentDescription="Letter C"/>
+
+                <ImageButton
+                    android:id="@+id/btnLetterD"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/d"
+                    android:background="@drawable/image_button_background"
+                    android:scaleType="centerInside"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="Letter D"/>
+            </LinearLayout>
+
+            <!-- Row 3: E-F -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <ImageButton
+                    android:id="@+id/btnLetterE"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/e"
+                    android:background="@drawable/image_button_background"
+                    android:scaleType="centerInside"
+                    android:layout_marginEnd="8dp"
+                    android:contentDescription="Letter E"/>
+
+                <ImageButton
+                    android:id="@+id/btnLetterF"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/f"
+                    android:background="@drawable/image_button_background"
+                    android:scaleType="centerInside"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="Letter F"/>
+            </LinearLayout>
+
+            <!-- Row 4: G-H -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <ImageButton
+                    android:id="@+id/btnLetterG"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/g"
+                    android:background="@drawable/image_button_background"
+                    android:scaleType="centerInside"
+                    android:layout_marginEnd="8dp"
+                    android:contentDescription="Letter G"/>
+
+                <ImageButton
+                    android:id="@+id/btnLetterH"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/h"
+                    android:background="@drawable/image_button_background"
+                    android:scaleType="centerInside"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="Letter H"/>
+            </LinearLayout>
+
+            <!-- Row 5: I-J -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <ImageButton
+                    android:id="@+id/btnLetterI"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/i"
+                    android:background="@drawable/image_button_background"
+                    android:scaleType="centerInside"
+                    android:layout_marginEnd="8dp"
+                    android:contentDescription="Letter I"/>
+
+                <ImageButton
+                    android:id="@+id/btnLetterJ"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/j"
+                    android:background="@drawable/image_button_background"
+                    android:scaleType="centerInside"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="Letter J"/>
+            </LinearLayout>
+
+            <!-- Row 6: K-L -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <ImageButton
+                    android:id="@+id/btnLetterK"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/k"
+                    android:background="@drawable/image_button_background"
+                    android:scaleType="centerInside"
+                    android:layout_marginEnd="8dp"
+                    android:contentDescription="Letter K"/>
+
+                <ImageButton
+                    android:id="@+id/btnLetterL"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/l"
+                    android:background="@drawable/image_button_background"
+                    android:scaleType="centerInside"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="Letter L"/>
+            </LinearLayout>
+
+            <!-- Row 7: M-N -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <ImageButton
+                    android:id="@+id/btnLetterM"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/m"
+                    android:background="@drawable/image_button_background"
+                    android:scaleType="centerInside"
+                    android:layout_marginEnd="8dp"
+                    android:contentDescription="Letter M"/>
+
+                <ImageButton
+                    android:id="@+id/btnLetterN"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/n"
+                    android:background="@drawable/image_button_background"
+                    android:scaleType="centerInside"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="Letter N"/>
+            </LinearLayout>
+
+            <!-- Row 8: O-P -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <ImageButton
+                    android:id="@+id/btnLetterO"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/o"
+                    android:background="@drawable/image_button_background"
+                    android:scaleType="centerInside"
+                    android:layout_marginEnd="8dp"
+                    android:contentDescription="Letter O"/>
+
+                <ImageButton
+                    android:id="@+id/btnLetterP"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/p"
+                    android:background="@drawable/image_button_background"
+                    android:scaleType="centerInside"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="Letter P"/>
+            </LinearLayout>
+
+            <!-- Row 9: Q-R -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <ImageButton
+                    android:id="@+id/btnLetterQ"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/q"
+                    android:background="@drawable/image_button_background"
+                    android:scaleType="centerInside"
+                    android:layout_marginEnd="8dp"
+                    android:contentDescription="Letter Q"/>
+
+                <ImageButton
+                    android:id="@+id/btnLetterR"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/r"
+                    android:background="@drawable/image_button_background"
+                    android:scaleType="centerInside"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="Letter R"/>
+            </LinearLayout>
+
+            <!-- Row 10: S-T -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <ImageButton
+                    android:id="@+id/btnLetterS"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/s"
+                    android:background="@drawable/image_button_background"
+                    android:scaleType="centerInside"
+                    android:layout_marginEnd="8dp"
+                    android:contentDescription="Letter S"/>
+
+                <ImageButton
+                    android:id="@+id/btnLetterT"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/t"
+                    android:background="@drawable/image_button_background"
+                    android:scaleType="centerInside"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="Letter T"/>
+            </LinearLayout>
+
+            <!-- Row 11: U-V -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <ImageButton
+                    android:id="@+id/btnLetterU"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/u"
+                    android:background="@drawable/image_button_background"
+                    android:scaleType="centerInside"
+                    android:layout_marginEnd="8dp"
+                    android:contentDescription="Letter U"/>
+
+                <ImageButton
+                    android:id="@+id/btnLetterV"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/v"
+                    android:background="@drawable/image_button_background"
+                    android:scaleType="centerInside"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="Letter V"/>
+            </LinearLayout>
+
+            <!-- Row 12: W-X -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <ImageButton
+                    android:id="@+id/btnLetterW"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/w"
+                    android:background="@drawable/image_button_background"
+                    android:scaleType="centerInside"
+                    android:layout_marginEnd="8dp"
+                    android:contentDescription="Letter W"/>
+
+                <ImageButton
+                    android:id="@+id/btnLetterX"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/x"
+                    android:background="@drawable/image_button_background"
+                    android:scaleType="centerInside"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="Letter X"/>
+            </LinearLayout>
+
+            <!-- Row 13: Y-Z -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <ImageButton
+                    android:id="@+id/btnLetterY"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/y"
+                    android:background="@drawable/image_button_background"
+                    android:scaleType="centerInside"
+                    android:layout_marginEnd="8dp"
+                    android:contentDescription="Letter Y"/>
+
+                <ImageButton
+                    android:id="@+id/btnLetterZ"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/z"
+                    android:background="@drawable/image_button_background"
+                    android:scaleType="centerInside"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="Letter Z"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
